@@ -44,8 +44,8 @@
 clear all;
 
 %set recordings
-strSession = '20140604';
-vecRecordings = 1:5;
+strSession = '20140826';
+vecRecordings = 1;
 
 runImageToTimeseries;
 
