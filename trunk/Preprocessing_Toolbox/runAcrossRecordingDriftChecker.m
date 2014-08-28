@@ -16,7 +16,7 @@
 %% input variables
 %source data
 clear all
-strMasterPath = 'D:\Data\Processed\imagingdata\';
+strMasterPath = 'F:\Data\Processed\imagingdata\';
 boolDoPlots = true;
 
 intMouse=6;

@@ -14,8 +14,8 @@
 
 %% input variables
 %source data
-strMasterPath = 'D:\Data\Processed\imagingdata\';
-strDirRawStackZ = 'G:\Data\Raw\imagingdata\20140507\xyz';
+strMasterPath = 'F:\Data\Processed\imagingdata\';
+strDirRawStackZ = 'F:\Data\Raw\imagingdata\20140507\xyz';
 strSession = '20140507';
 vecRecordings = 2:3;
 boolDoPlots = false;

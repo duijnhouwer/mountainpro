@@ -7,7 +7,7 @@ function runScriptBackup
 	
 	%run backup
 	strTargetDir = 'D:\Dropbox\Processing';
-	strDataDir = 'D:\Processing';
+	strDataDir = 'F:\Data\Processing';
 	intStartRelativePath = length(strDataDir)+1;
 	if exist(strDataDir,'dir') && exist(strTargetDir,'dir')
 		%msg

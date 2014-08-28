@@ -3,7 +3,7 @@
 %   Detailed explanation goes here
 
 %% set session to convert
-strDir = 'D:\Data\Processed\imagingdata\20130313\xyt02\';
+strDir = 'F:\Data\Processed\imagingdata\20130313\xyt02\';
 strSes = '20130313xyt02_ses.mat';
 
 %% perform conversion

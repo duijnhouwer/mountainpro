@@ -3,8 +3,8 @@ function sDC = DC_populateStructure()
 	%   Detailed explanation goes here
 	
 	%path locations
-	sDC.metaData.strProcessedPath = 'D:\Data\Processed\imagingdata';
-	sDC.metaData.strRawPath = 'D:\Data\Raw\imagingdata';
+	sDC.metaData.strProcessedPath = 'F:\Data\Processed\imagingdata';
+	sDC.metaData.strRawPath = 'F:\Data\Raw\imagingdata';
 	
 	%cell types:
 	sDC.metaData.cellPixRespType{1} = 'None';

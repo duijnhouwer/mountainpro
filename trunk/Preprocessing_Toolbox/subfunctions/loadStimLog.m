@@ -3,7 +3,7 @@ function [sRec,intFlag] = loadStimLog(sRec)
 	%   Detailed explanation goes here
 	
 	intFlag=0;
-	strPath=['D:\Data\Raw\imaginglogs\' sRec.strSession filesep];
+	strPath=['F:\Data\Raw\imaginglogs\' sRec.strSession filesep];
 	try
 		sRec.sStim = load([strPath sRec.sRawLib.strStimLog]);
 		intFlag=1;

@@ -1,4 +1,4 @@
-strPath = 'D:\Data\Processed\imagingdata\';
+strPath = 'F:\Data\Processed\imagingdata\';
 strSes = '20140207';
 vecRecordings = 1:8;
 intRecalcType = 3;

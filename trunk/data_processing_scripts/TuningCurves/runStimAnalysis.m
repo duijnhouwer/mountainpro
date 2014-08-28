@@ -98,7 +98,7 @@ elseif intProcess == 5
 end
 
 %% get data
-sParams.strFigDir = 'D:\Data\Results\neuropilTimeCourses\';
+sParams.strFigDir = 'F:\Data\Results\neuropilTimeCourses\';
 boolAwake = 0;
 strAwake = 'anesth';
 for boolDoShuffle = [0 1]

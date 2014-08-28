@@ -65,7 +65,7 @@
 		vecClusterSize=2:6;
 	end
 	if ~exist('strDir','var') || isempty(strDir)
-		strDir = 'D:\Processed\imagingdata\20120718\xyt01\';
+		strDir = 'F:\Processed\imagingdata\20120718\xyt01\';
 	end
 	if ~exist('strSession','var') || isempty(strSession)
 		strSession = '20120718xyt01_ses.mat';

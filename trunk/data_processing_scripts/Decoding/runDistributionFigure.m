@@ -26,7 +26,7 @@ for intSes=1:6
 	%get ses
 	vecTime = fix(clock);
 	fprintf('   Now running %s%s; time is [%02.0f:%02.0f:%02.0f]\n',strSes,strRec,vecTime(4),vecTime(5),vecTime(6))
-	strDir=['D:\Data\Processed\imagingdata\' strSes filesep strRec filesep];
+	strDir=['F:\Data\Processed\imagingdata\' strSes filesep strRec filesep];
 	strFile=[strSes strRec '_ses.mat'];
 	structIn = load([strDir strFile]);
 	
@@ -91,7 +91,7 @@ ylabel('number of pairs')
 set(h,'Color',[1 1 1])
 
 %save figure
-strFigEps = ['D:\Data\Results\decoding\DecodingDistribution.eps'];
+strFigEps = ['F:\Data\Results\decoding\DecodingDistribution.eps'];
 export_fig(strFigEps)
-strFigTif = ['D:\Data\Results\decoding\DecodingDistribution.tiff'];
+strFigTif = ['F:\Data\Results\decoding\DecodingDistribution.tiff'];
 export_fig(strFigTif)

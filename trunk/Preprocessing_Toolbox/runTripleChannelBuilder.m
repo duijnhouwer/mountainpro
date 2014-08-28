@@ -1,6 +1,6 @@
 %function runTripleChannelBuilder
 
-strSesPath = 'D:\Data\Raw\imagingdata\20130612\';
+strSesPath = 'F:\Data\Raw\imagingdata\20130612\';
 
 strRedIm910 = 'reference\reference_t0_ch00.tif';
 strGreIm910 = 'reference\reference_t0_ch01.tif';

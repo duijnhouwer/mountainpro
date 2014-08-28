@@ -1,5 +1,5 @@
 %Changing paths to D:\
-drive='D';
+drive='F';
 list=dir([drive ':\Data\Processed\imagingdata\']);
 rec_date='20140314';
 rec_list=dir([drive ':\Data\Processed\imagingdata\' rec_date '\']);
