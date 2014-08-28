@@ -30,7 +30,7 @@ function sRec = doCalcPixelResponsiveness(sRec)
 	
 	intBaselineIndex = intStimTypes + 1;
 	intLastType = nan;
-	intTraceLength = max(max(abs(structStim.FrameOn-structStim.FrameOff)),structStim.FrameOn(1));
+	intTraceLength = ceil(max(max(abs(structStim.FrameOn-structStim.FrameOff)),structStim.FrameOn(1)));
 	matTrace = nan(sRec.sProcLib.y,sRec.sProcLib.x,intTraceLength);
 	intTraceCounter = 0;
 	vecRepCounter = zeros(1,intBaselineIndex);
