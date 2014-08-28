@@ -7,7 +7,7 @@ function runDataBackup
 	
 	%run backup
 	strTargetDir = 'D:\Dropbox\DataBackup';
-	strDataDir = 'D:\Data\Processed\imagingdata';
+	strDataDir = 'F:\Data\Processed\imagingdata';
 	if exist(strDataDir,'dir') && exist(strTargetDir,'dir')
 		%check which ones are already copied
 		fprintf('\nChecking for new session files to backup...\n');

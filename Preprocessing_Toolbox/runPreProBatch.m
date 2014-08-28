@@ -7,7 +7,7 @@ for intSes=1:7
 	clear cellStimLog;
 	
 	sMD = struct; %structMetaData
-	sMD.strMasterDir = 'D:\Data';
+	sMD.strMasterDir = 'F:\Data';
 	sMD.strImgSource = '\Raw\imagingdata\';
 	sMD.strLogSource = '\Raw\imaginglogs\';
 	sMD.strImgTarget = '\Processed\imagingdata\';

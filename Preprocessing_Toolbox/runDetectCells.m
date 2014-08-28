@@ -416,7 +416,7 @@ function ptrButtonLoadRecording_Callback(hObject, eventdata, handles) %#ok<DEFNU
 	
 	%switch path
 	try
-		oldPath = cd('D:\Data\Processed\imagingdata');
+		oldPath = cd('F:\Data\Processed\imagingdata');
 	catch
 		oldPath = cd();
 	end

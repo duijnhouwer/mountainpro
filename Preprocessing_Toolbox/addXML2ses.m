@@ -1,4 +1,4 @@
-strDir = 'D:\Data\Processed\imagingdata\';
+strDir = 'F:\Data\Processed\imagingdata\';
 sDir= dir(strDir);
 %loop through days
 for intSes=1:numel(sDir)

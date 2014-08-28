@@ -9,7 +9,7 @@ end
 
 %% define general metadata
 sPS = loadDefaultSettingsPrePro();%structProcessingSettings
-strMasterDir = 'D:\Data';
+strMasterDir = 'F:\Data';
 strTargetDir = '\Processed\imagingdata\';
 sPS.boolUseParallel = false;
 
@@ -39,7 +39,7 @@ for intRec=vecRecordings
 	%clear sRecLoad;
 	if ~isfield(sRec,'sDC')
 		sRec.sDC = sDC;
-		sRec.sMD.strMasterDir= 'D:\Data';
+		sRec.sMD.strMasterDir= 'F:\Data';
 		sRec.sMD.strImgSource= '\Raw\imagingdata\';
 		sRec.sMD.strLogSource= '\Raw\stimulationlogs\imaging\';
 		sRec.sMD.strImgTarget= '\Processed\imagingdata\';

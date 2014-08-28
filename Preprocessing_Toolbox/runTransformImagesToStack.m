@@ -3,13 +3,13 @@ clear all
 if ~exist('strSession','var')
 	strSession = '20130627';
 	vecRecordings = 1;
-	strDir{1} = 'D:\Data\Raw\imagingdata\20130627\xyt01';
-	%strDir{2} = 'D:\Data\Raw\imagingdata\20120718\OT2';
+	strDir{1} = 'F:\Data\Raw\imagingdata\20130627\xyt01';
+	%strDir{2} = 'F:\Data\Raw\imagingdata\20120718\OT2';
 end
 
 %% define general metadata
 sPS = loadDefaultSettingsPrePro();%structProcessingSettings
-strMasterDir = 'D:\Data';
+strMasterDir = 'F:\Data';
 strTargetDir = '\Raw\imagingdata\';
 
 %% create filenames
