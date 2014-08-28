@@ -107,8 +107,8 @@ sPS.boolSupervised = false; %is there anyone overseeing the process? or should i
 
 %% define general metadata
 sMD = struct; %structMetaData
-sMD.strMasterDir = 'D:\Data';
-sMD.strSourceDir = 'G:\Data';
+sMD.strMasterDir = 'F:\Data';
+sMD.strSourceDir = 'F:\Data';
 sMD.strImgSource = '\Raw\imagingdata\';
 sMD.strLogSource = '\Raw\imaginglogs\';
 sMD.strImgTarget = '\Processed\imagingdata\';
@@ -116,10 +116,9 @@ sMD.strLogTarget = '\Processed\imaginglogs\';
 sMD.strTemp = '\Temp\';
 
 %% define specific recording
-%{
-	cellSes{1}= '20140129';
+	cellSes{1}= '20140826';
 	cellRec{1}= 'xyt01';
-	
+%{	
 	cellSes{2}= '20140129';
 	cellRec{2}= 'xyt02';
 	
@@ -136,29 +135,17 @@ sMD.strTemp = '\Temp\';
 	cellRec{6}= 'xyt02';
 %}
 if ~exist('strSession','var')
-	strSession = '20140604';
-	vecRecordings = 1:5;
+	strSession = '20140826';
+	vecRecordings = 1;
 end
-%if ~exist('strSession','var')
-%	strSession = '20140423';
-%	vecRecordings = 1:3;
-%end
 
 %assign filenames
 for intRec=vecRecordings
 	cellName{intRec} = sprintf('xyt%02d',intRec);
 	cellRefPaths{intRec} =[sMD.strSourceDir sMD.strImgSource strSession filesep cellName{intRec} filesep];
 end
-cellStimLog{1} = '20140604_MP_Lick_Water_HeadFixed_StimDetection_M56_xyt01_setup0.mat'; %name of the stimulation log
-cellStimLog{2} = '20140604_MP_Lick_Water_HeadFixed_StimDetection_M56_xyt02_setup0.mat';
-cellStimLog{3} = '20140604_MP_Lick_Water_HeadFixed_StimDetection_M56_xyt03_setup0.mat';
-cellStimLog{4} = '20140604_MP_Lick_Water_HeadFixed_StimDetection_M56_xyt04_setup0.mat';
-cellStimLog{5} = '20140604_MP_Lick_Water_HeadFixed_StimDetection_M56_xyt05_setup0.mat';
-%cellStimLog{6} = '20140530_MP_Lick_Water_HeadFixed_StimDetection_M55_xyt06_setup0.mat';
-%cellStimLog{7} = '20140530_MP_Lick_Water_HeadFixed_StimDetection_M55_xyt07_setup0.mat';
-%cellStimLog{8} = '20140530_MP_Lick_Water_HeadFixed_StimDetection_M55_xyt08_setup0.mat';
-%cellStimLog{9} = '20140530_MP_OrientationTuning8BiDirections_M55_xyt09.mat';
-%end
+cellStimLog{1} = 'TestZwartOfWitScherm-0-20140826152223_Montijn.mat'; %name of the stimulation log
+
 
 %% collect metadata for recordings
 multiStruct = struct;
