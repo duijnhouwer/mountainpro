@@ -3,8 +3,8 @@
 
 %% input
 if ~exist('strSession','var')
-	strSession = '20130627';
-	vecRecordings = 1:2;
+	strSession = '20140826';
+	vecRecordings = 1;
 end
 
 %% define general metadata
