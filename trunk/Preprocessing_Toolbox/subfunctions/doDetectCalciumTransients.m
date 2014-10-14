@@ -2,17 +2,38 @@ function spikeData = doDetectCalciumTransients(sRec,boolDetectSpikes,dblTau)
 	% script that detects spikes in dFoF data
 	
 	%check input
-	if nargin < 2,boolDetectSpikes = true;end %set switch to detect spikes
+	if nargin < 2,boolDetectSpikes = false;end %set switch to detect spikes
 	if nargin < 3,dblTau = 0.500;end % set shape of exponential
 	
 	%generate name
 	strRec = sprintf('%sxyt%02d',sRec.strSession,sRec.intRecording);
 	
 	%calculate actual duration of experiment; saved in format: 10m12.01s
+    % 2014-10-14: changed this code such that strings with hours are 
+    % processed correctly. Jacob + Laurens
 	strT = sRec.xml.sData.strActualImageSizeT;
-	intLocM = strfind(strT,'m');
-	intMins = str2double(strT(1:(intLocM-1)));
-	dblTotDurSecs = str2double(strT((intLocM+1):(end-1))) + intMins*60;
+    % Get the hours, if any
+    hIdx=find(strT=='h');
+    if ~isempty(hIdx)
+        nHours=str2double(strT(1:hIdx-1));
+    else
+        nHours=0;
+        hIdx=1;
+    end
+    % Get the minutes, if any
+    mIdx=find(strT=='m');
+    if ~isempty(mIdx)
+        nMins=str2double(strT(hIdx+1:mIdx-1));
+    else
+        nMins=0;
+        mIdx=1;
+    end
+    % Get the seconds, if any
+    sIdx=find(strT=='s');
+    if ~isempty(sIdx)
+        nSecs=str2double(strT(mIdx+1:sIdx-1));
+    end
+	dblTotDurSecs = nHours*3600 + nMins*60 + nSecs;
 	dblFrameTime = dblTotDurSecs/sRec.sProcLib.t;
 	dblSamplingFreq = 1/dblFrameTime;
 	
@@ -29,9 +50,16 @@ function spikeData = doDetectCalciumTransients(sRec,boolDetectSpikes,dblTau)
 			
 			%get fluorescence without neuropil subtraction
 			F = sRec.timeseries.roi(intObject).F;
-			
+			npF = sRec.timeseries.roi(intObject).npF;
+            
 			% calculate dF/F0
-			dFoF = calcdFoF( F, dblSamplingFreq ) ;
+            %get F
+			vecSoma = calcdFoF(F,dblSamplingFreq);
+			vecNeuropil = calcdFoF(npF,dblSamplingFreq);
+			
+			% calculate dFoF
+			dFoF = vecSoma - vecNeuropil;
+            
 			fprintf('\b	Done! Took %.1f seconds\n',toc(ptrTime))
 			
 			if boolDetectSpikes

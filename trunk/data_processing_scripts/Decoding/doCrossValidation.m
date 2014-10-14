@@ -7,7 +7,12 @@ function sMetaOutSD = doCrossValidation(ses,sParams)
 	if ~isfield(sParams,'verbose'),sParams.verbose = 1;end
 	
 	%get data
-	cellSelect = sParams.cellSelect;
+    if isfield(sParams,'cellSelect'),
+        cellSelect = sParams.cellSelect;
+    else
+        sTypes = getStimulusTypes(ses.structStim,{'Orientation'});
+        cellSelect = getSelectionVectors(ses.structStim,sTypes);
+    end
 	verbose = sParams.verbose;
 	sParams.verbose = 0;
 	intNumTypes = length(cellSelect);

@@ -8,7 +8,7 @@ function [ses,indKeepList] = doRecalcdFoF(ses,intSwitch,indKeepList,strType)
 		indKeepList = true(1,numel(ses.(strType)));
 	end
 	if nargin < 2 || isempty(intSwitch)
-		intSwitch = 1;
+		intSwitch = 3;
 	end
 
 
