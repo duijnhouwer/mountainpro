@@ -91,9 +91,11 @@ function [intDetectObjects,indDelete] = DC_detectObjects(vecObjects)
 			boolInvert = boolInvertNeurons;
 			dblThresholdPercentage = 0.7;
 			im1D = imGreen;
-		else
+        else
+            boolNeuron = false;
 			boolInvert = false;
 			dblThresholdPercentage = 0.7;
+            im1D = imGreen;
 		end
 		%vecColor = sDC.metaData.cellColor{intType};
 		
