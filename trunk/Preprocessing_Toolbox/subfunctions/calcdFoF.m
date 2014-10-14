@@ -52,8 +52,8 @@ function [vecdFoF] = calcdFoF(vecF, dblSamplingFreq,intType)
 		
 		%calculate F0
 		vecSelectBase=1:intWindowFrames; %base vector from which to build full selection matrix
-		matSelect=repmat(vecSelectBase,[intWindowFrames 1]); %create static (non-shifting window) selection matrix for first part of trace
-		intSizeSecond = (length(vecF)-intWindowFrames); %calculate size of second part of selection matrix
+        matSelect=repmat(vecSelectBase,[intWindowFrames 1]); %create static (non-shifting window) selection matrix for first part of trace
+        intSizeSecond = (length(vecF)-intWindowFrames); %calculate size of second part of selection matrix
 		matSelect=[matSelect;repmat(vecSelectBase,[intSizeSecond 1])+repmat((1:intSizeSecond)',[1 intWindowFrames])]; %add incrementally increasing selection trace matrix (with shifting window) to static first part
 		matSortedWindowTraces=sort(vecF(matSelect),2,'ascend');%select F values from trace with matSelect; then sort F values (ascending) per trace
 		vecF0=mean(matSortedWindowTraces(:,round(intWindowFrames/2)),2)'; %take first half sorted values, so that lowest 50% are selected; then calculate mean per trace for each time point
