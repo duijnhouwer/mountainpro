@@ -11,32 +11,10 @@ function spikeData = doDetectCalciumTransients(sRec,boolDetectSpikes,dblTau)
 	%calculate actual duration of experiment; saved in format: 10m12.01s
     % 2014-10-14: changed this code such that strings with hours are 
     % processed correctly. Jacob + Laurens
-	strT = sRec.xml.sData.strActualImageSizeT;
-    % Get the hours, if any
-    hIdx=find(strT=='h');
-    if ~isempty(hIdx)
-        nHours=str2double(strT(1:hIdx-1));
-    else
-        nHours=0;
-        hIdx=1;
-    end
-    % Get the minutes, if any
-    mIdx=find(strT=='m');
-    if ~isempty(mIdx)
-        nMins=str2double(strT(hIdx+1:mIdx-1));
-    else
-        nMins=0;
-        mIdx=1;
-    end
-    % Get the seconds, if any
-    sIdx=find(strT=='s');
-    if ~isempty(sIdx)
-        nSecs=str2double(strT(mIdx+1:sIdx-1));
-    end
-	dblTotDurSecs = nHours*3600 + nMins*60 + nSecs;
-	dblFrameTime = dblTotDurSecs/sRec.sProcLib.t;
+	dblTotDurSecs = lkConvertTimeStrToSeconds(sRec.xml.sData.strActualImageSizeT)
+   	dblFrameTime = dblTotDurSecs/sRec.sProcLib.t;
 	dblSamplingFreq = 1/dblFrameTime;
-	
+    
 	% calculate activity traces for all neurons
 	fprintf('Calculating dFoF and transients for [%s], please wait...\n',strRec);
 	for intObject = 1:length(sRec.timeseries.roi)

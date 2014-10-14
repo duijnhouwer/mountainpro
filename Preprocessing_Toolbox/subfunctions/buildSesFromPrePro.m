@@ -45,11 +45,7 @@ function ses = buildSesFromPrePro(strMatRec)
 	ses.time.exp = ses.date;
 	ses.time.start = ses.date;
 	if sRec.sProcLog.boolXMLFound
-		strT = sRec.xml.sData.strActualImageSizeT;
-		intLocM = strfind(strT,'m');
-		intMins = str2double(strT(1:(intLocM-1)));
-		ses.time.dur = str2double(strT((intLocM+1):(end-1))) + intMins*60;
-		ses.samplingFreq = sRec.xml.sData.dblFrameDur;
+		ses.time.dur = lkConvertTimeStrToSeconds(sRec.xml.sData.strActualImageSizeT);
 	else
 		ses.time.dur = 0;
 	end
@@ -61,8 +57,7 @@ function ses = buildSesFromPrePro(strMatRec)
 	ses.size = sRec.sProcLib;
 	
 	% get sampling frequency
-	frameTime = ses.time.dur/ses.size.t;
-	ses.samplingFreq = 1/frameTime;
+	ses.samplingFreq = ses.size.t/ses.time.dur;
 	
 	% get anesthesia level
 	ses.anesthesia = [];
