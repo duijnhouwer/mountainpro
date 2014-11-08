@@ -120,15 +120,19 @@ sRec.sProcLog.boolAverageSaved = false;
     cellRec={};
     cellStimLog={};
     %
-    cellSes{end+1}= '20141008';
+    cellSes{end+1}= '20141104';
     cellRec{end+1}= 'xyt01';
-    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141008142855_xyt01_Montijn.mat'; %name of the stimulation log
+    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141104142836_xyt01_Montijn.mat'; %name of the stimulation log
     %
-    cellSes{end+1}= '20141008';
+    cellSes{end+1}= '20141104';
     cellRec{end+1}= 'xyt02';
-    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141008151223_xyt02_Montijn.mat';
-        
-    vecRecordings=1:2;
+    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141104145019_xyt02_Montijn.mat';
+    %
+    cellSes{end+1}= '20141104';
+    cellRec{end+1}= 'xyt03';
+    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141104151145_xyt03_Montijn.mat';
+    
+    vecRecordings=3;
     
     %assign filenames
     for intRec=vecRecordings(:)'
