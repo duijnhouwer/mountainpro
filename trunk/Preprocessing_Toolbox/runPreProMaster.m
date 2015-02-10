@@ -120,20 +120,31 @@ sRec.sProcLog.boolAverageSaved = false;
     cellRec={};
     cellStimLog={};
     %
-    cellSes{end+1}= '20141104';
+    cellSes{end+1}= '20141223';
     cellRec{end+1}= 'xyt01';
-    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141104142836_xyt01_Montijn.mat'; %name of the stimulation log
+    cellStimLog{end+1} = 'lkDpxGratingExp-M002-20141223140717_xyt01_Montijn.mat'; %name of the stimulation log
     %
-    cellSes{end+1}= '20141104';
+    cellSes{end+1}= '20141223';
     cellRec{end+1}= 'xyt02';
-    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141104145019_xyt02_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M002-20141223143515_xyt02_Montijn.mat';
     %
-    cellSes{end+1}= '20141104';
+    cellSes{end+1}= '20141223';
     cellRec{end+1}= 'xyt03';
-    cellStimLog{end+1} = 'lkDpxGratingExp-MSA-20141104151145_xyt03_Montijn.mat';
-    
-    vecRecordings=3;
-    
+    cellStimLog{end+1} = 'lkDpxGratingExp-M002-20141223161347_xyt03_Montijn.mat';
+    %
+    cellSes{end+1}= '20141223';
+    cellRec{end+1}= 'xyt04';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M002-20141223163548_xyt04_Montijn.mat';
+    %
+    cellSes{end+1}= '20141223';
+    cellRec{end+1}= 'xyt05';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M002-20141223172403_xyt05_Montijn.mat';
+    %
+    cellSes{end+1}= '20141223';
+    cellRec{end+1}= 'xyt06';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M002-20141223174750_xyt06_Montijn.mat';
+    vecRecordings=3:6;
+
     %assign filenames
     for intRec=vecRecordings(:)'
         cellName{intRec} = cellRec{intRec};
