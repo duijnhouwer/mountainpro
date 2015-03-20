@@ -120,21 +120,21 @@ sRec.sProcLog.boolAverageSaved = false;
     cellRec={};
     cellStimLog={};
     %
-    cellSes{end+1}= '20150218';
+    cellSes{end+1}= '20150310';
     cellRec{end+1}= 'xyt01';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M011-20150218141432_xyt01_Montijn.mat'; %name of the stimulation log
+    cellStimLog{end+1} = 'lkDpxGratingExp-M012-20150310170849_xyt01_Montijn.mat'; %name of the stimulation log
     %
-    cellSes{end+1}= '20150218';
+    cellSes{end+1}= '20150310';
     cellRec{end+1}= 'xyt02';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M011-20150218145926_xyt02_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M012-20150310175411_xyt02_Montijn.mat';
     %
-    cellSes{end+1}= '20150218';
+    cellSes{end+1}= '20150310';
     cellRec{end+1}= 'xyt03';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M011-20150218162326_xyt03_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M012-20150310182519_xyt03_Montijn.mat';
     %
-    cellSes{end+1}= '20150218';
+    cellSes{end+1}= '20150310';
     cellRec{end+1}= 'xyt04';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M011-20150218175500_xyt04_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M012-20150310190246_xyt04_Montijn.mat';
     %
 %     cellSes{end+1}= '20141223';
 %     cellRec{end+1}= 'xyt05';
