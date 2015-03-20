@@ -68,7 +68,7 @@ function runDetectCells_OpeningFcn(hObject, eventdata, handles, varargin)
 	set(hObject,'DeleteFcn','DC_DeleteFcn')
 	
 	% set rainbow logo
-	I = imread('DC_rainbow.tif');
+	I = imread('SNAP.jpg');
 	%I2 = imresize(I, [100 NaN]);
 	axes(handles.ptrAxesLogo); %#ok<MAXES>
 	imshow(I);
