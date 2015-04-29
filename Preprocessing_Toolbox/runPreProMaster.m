@@ -179,7 +179,7 @@ sRec.sProcLog.boolAverageSaved = false;
     cellSes{end+1}= '20150401';
     cellRec{end+1}= 'xyt15';
     cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150402000312_xyt15_Montijn.mat';
-    vecRecordings=7;
+    vecRecordings=7:15;
     %assign filenames
     for intRec=vecRecordings(:)'
         cellName{intRec} = cellRec{intRec};
