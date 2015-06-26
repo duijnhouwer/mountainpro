@@ -213,7 +213,7 @@ sRec.sProcLog.boolAverageSaved = false;
         fprintf('\nProceeding with image processing of recording %d... Please be patient, this could take a while.\n',intRecording)
         sRec = multiStruct.sRec(intRecording);
         sRec = doImagePrePro(sRec);
-        sRec = doCalcPixelResponsiveness(sRec);
+        %sRec = doCalcPixelResponsiveness(sRec);
         multiStructOut.sRec(intRecording) = sRec;
     end
     
