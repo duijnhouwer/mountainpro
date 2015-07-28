@@ -120,66 +120,66 @@ sRec.sProcLog.boolAverageSaved = false;
     cellRec={};
     cellStimLog={};
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt01';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M015-20150401160636_xyt01_Montijn.mat'; %name of the stimulation log
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620130041_xyt01_Montijn.mat'; %name of the stimulation log
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt02';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M015-20150401165625_xyt02_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620143222_xyt02_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt03';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M015-20150401180933_xyt04_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620153329_xyt03_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt04';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M015-20150401192428_xyt06_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620161431_xyt04_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt05';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M015-20150401202948_xyt08_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620173308_xyt05_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt06';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M015-20150401212643_xyt10_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620183728_xyt06_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt07';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401173437_xyt03_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M019-20150620185803_xyt07_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt08';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401184829_xyt05_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620203004_xyt08_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt09';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401195449_xyt07_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620212202_xyt09_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt10';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401205824_xyt09_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620220836_xyt10_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt11';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401220625_xyt11_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620224618_xyt11_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt12';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401223746_xyt12_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620232257_xyt12_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
+    cellSes{end+1}= '20150620';
     cellRec{end+1}= 'xyt13';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401230849_xyt13_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150621003630_xyt13_Montijn.mat';
     %
-    cellSes{end+1}= '20150401';
-    cellRec{end+1}= 'xyt14';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401233534_xyt14_Montijn.mat';
-    %
-    cellSes{end+1}= '20150401';
-    cellRec{end+1}= 'xyt15';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150402000312_xyt15_Montijn.mat';
-    vecRecordings=7:15;
+%     cellSes{end+1}= '20150401';
+%     cellRec{end+1}= 'xyt14';
+%     cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401233534_xyt14_Montijn.mat';
+%     %
+%     cellSes{end+1}= '20150401';
+%     cellRec{end+1}= 'xyt15';
+%     cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150402000312_xyt15_Montijn.mat';
+    vecRecordings=4:5;
     %assign filenames
     for intRec=vecRecordings(:)'
         cellName{intRec} = cellRec{intRec};
@@ -213,7 +213,7 @@ sRec.sProcLog.boolAverageSaved = false;
         fprintf('\nProceeding with image processing of recording %d... Please be patient, this could take a while.\n',intRecording)
         sRec = multiStruct.sRec(intRecording);
         sRec = doImagePrePro(sRec);
-        %sRec = doCalcPixelResponsiveness(sRec);
+%         sRec = doCalcPixelResponsiveness(sRec);
         multiStructOut.sRec(intRecording) = sRec;
     end
     
