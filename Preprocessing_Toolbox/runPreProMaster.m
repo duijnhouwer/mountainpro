@@ -107,8 +107,8 @@ sRec.sProcLog.boolAverageSaved = false;
     
     %% define general metadata
     sMD = struct; %structMetaData
-    sMD.strMasterDir = 'F:\Data';
-    sMD.strSourceDir = 'F:\Data';
+    sMD.strMasterDir = 'G:\Reverse Phi\Data';
+    sMD.strSourceDir = 'G:\Reverse Phi\Data';
     sMD.strImgSource = '\Raw\imagingdata\';
     sMD.strLogSource = '\Raw\imaginglogs\';
     sMD.strImgTarget = '\Processed\imagingdata\';
@@ -120,66 +120,66 @@ sRec.sProcLog.boolAverageSaved = false;
     cellRec={};
     cellStimLog={};
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt01';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620130041_xyt01_Montijn.mat'; %name of the stimulation log
-    %
-    cellSes{end+1}= '20150620';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdk0-M041-20160613114917_xyt01_Montijn.mat'; %name of the stimulation log
+    
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt02';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620143222_xyt02_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M041-20160613121638_xyt02_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt03';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620153329_xyt03_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M041-20160613124728_xyt03_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt04';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620161431_xyt04_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M041-20160613131231_xyt04_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt05';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620173308_xyt05_Montijn.mat';
-    %
-    cellSes{end+1}= '20150620';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M041-20160613135945_xyt05_Montijn.mat';
+    
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt06';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620183728_xyt06_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdk0-M039-20160613151008_xyt06_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt07';
-    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M019-20150620185803_xyt07_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M039-20160613153550_xyt07_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt08';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620203004_xyt08_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M039-20160613160012_xyt08_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt09';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620212202_xyt09_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M039-20160613162452_xyt09_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160613';
     cellRec{end+1}= 'xyt10';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620220836_xyt10_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M039-20160613165045_xyt10_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160516';
     cellRec{end+1}= 'xyt11';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620224618_xyt11_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M055-20160516173351_xyt11_Montijn.mat';
     %
-    cellSes{end+1}= '20150620';
+    cellSes{end+1}= '20160516';
     cellRec{end+1}= 'xyt12';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150620232257_xyt12_Montijn.mat';
-    %
-    cellSes{end+1}= '20150620';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M055-20160516180011_xyt12_Montijn.mat';
+    
+    cellSes{end+1}= '20160516';
     cellRec{end+1}= 'xyt13';
-    cellStimLog{end+1} = 'lkDpxGratingExp-M019-20150621003630_xyt13_Montijn.mat';
+    cellStimLog{end+1} = 'lkDpxTuningDirRdkRevPhi0-M055-20160516182640_xyt13_Montijn.mat';
+    
+    cellSes{end+1}= '20150401';
+    cellRec{end+1}= 'xyt14';
+    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401233534_xyt14_Montijn.mat';
     %
-%     cellSes{end+1}= '20150401';
-%     cellRec{end+1}= 'xyt14';
-%     cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150401233534_xyt14_Montijn.mat';
-%     %
-%     cellSes{end+1}= '20150401';
-%     cellRec{end+1}= 'xyt15';
-%     cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150402000312_xyt15_Montijn.mat';
-    vecRecordings=4:5;
+    cellSes{end+1}= '20150401';
+    cellRec{end+1}= 'xyt15';
+    cellStimLog{end+1} = 'lkDpxGratingAdaptExp-M015-20150402000312_xyt15_Montijn.mat';
+    vecRecordings=1:5;
     %assign filenames
     for intRec=vecRecordings(:)'
         cellName{intRec} = cellRec{intRec};

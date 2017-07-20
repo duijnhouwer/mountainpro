@@ -9,7 +9,7 @@ end
 
 %% define general metadata
 sPS = loadDefaultSettingsPrePro();%structProcessingSettings
-strMasterDir = 'F:\Data';
+strMasterDir = 'G:\Reverse Phi\Data';
 strTargetDir = '\Processed\imagingdata\';
 sPS.boolUseParallel = false;
 

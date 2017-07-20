@@ -1,7 +1,7 @@
-strPath = 'F:\Data\Processed\imagingdata\';
-strSes = '20140207';
-vecRecordings = 1:8;
-intRecalcType = 3;
+strPath = 'G:\Reverse Phi\Data\Processed\imagingdata\';
+strSes = '20170523';
+vecRecordings = 1:90;
+intRecalcType = 5;
 %{ 
 recalc types:
 1) rectify non-positive values to 0

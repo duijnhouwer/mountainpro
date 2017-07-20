@@ -43,8 +43,8 @@ function run
     %	Updated help & comments [by JM]
 
     %set recordings
-    strSession = '20150703'
-    vecRecordings = 1:3
+    strSession = '20160613'
+    vecRecordings = 6:10;
     runImageToTimeseries;
     runDetectCalciumTransients;
     runBuildSesFromPrePro;

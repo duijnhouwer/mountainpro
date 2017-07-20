@@ -3,13 +3,13 @@
 
 %% input
 if ~exist('strSession','var')
-	strSession = '20140314';
-	vecRecordings = 1:9;
+	strSession = '20160128';
+	vecRecordings = 4;
 end
 
 %% define general metadata
 sPS = loadDefaultSettingsPrePro();%structProcessingSettings
-strMasterDir = 'F:\Data';
+strMasterDir = 'G:\Reverse Phi\Data';
 strTargetDir = '\Processed\imagingdata\';
 
 %% create filenames

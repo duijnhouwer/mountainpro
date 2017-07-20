@@ -8,8 +8,8 @@ function [MaskCell, MaskCellNeuropil] = getROImasksPrePro(sRec,sDC)
 	numROIs = numel(sDC.ROI);
 	
 	% structure element 1 micron, 2 micron and 5 micron
-	SEin = strel( 'disk', round(2 / (sRec.xml.sData.dblActualVoxelSizeX/1000)) ); %inner ring (ignored)
-	SEout = strel( 'disk', round(5 / (sRec.xml.sData.dblActualVoxelSizeX/1000)) ); %outer ring (used for fluorescence correction)
+	SEin = strel( 'disk', round(2 / (sRec.xml.sData.dblActualVoxelSizeX/1000)),8 ); %inner ring (ignored)
+	SEout = strel( 'disk', round(5 / (sRec.xml.sData.dblActualVoxelSizeX/1000)),8 ); %outer ring (used for fluorescence correction)
 
 	% mask variables
 	MaskCell = cell(1,numROIs);
